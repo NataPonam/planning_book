@@ -24,10 +24,11 @@ const styles = StyleSheet.create({
     height: 48,
     borderRadius: 16,
     backgroundColor: Colors.accent,
-    shadowColor: Colors.shadow,
+    width: '100%',
+    shadowColor: Colors.darkShadow,
     shadowOpacity: 1,
     shadowRadius: 16,
-    elevation: 24,
+    elevation: 20,
   },
   text: {
     color: Colors.white,

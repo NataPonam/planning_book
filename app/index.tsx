@@ -28,7 +28,7 @@ export default function Main() {
         <Text style={styles.title}>
           Управляй{'\n'}
           <Text style={[styles.title, styles.accenttitle]}>Задачами</Text> и {'\n'}достигай{'\n'}
-          результата
+          результата✌
         </Text>
       </View>
       <Pressable style={styles.button} onPress={() => router.navigate('/accaunt')}>

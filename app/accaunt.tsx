@@ -1,7 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 import { Fonts, Colors } from '@/constants/Colors';
-import { ButtonComponent } from '@/components/ButtonComponent';
 import Form from '@/components/Form';
 
 export default function Account() {
@@ -10,7 +9,6 @@ export default function Account() {
       <Text style={styles.title}>Добро пожаловать!</Text>
       <Text style={styles.descr}>Чтобы продолжить, заполните начальную информацию о вас?</Text>
       <Form />
-      <ButtonComponent onPress={() => console.log('pressed')} text="Начать" style={styles.button} />
     </View>
   );
 }
@@ -36,8 +34,5 @@ const styles = StyleSheet.create({
     lineHeight: 20,
     color: Colors.lightText,
     paddingBottom: 40,
-  },
-  button: {
-    marginTop: 60,
   },
 });

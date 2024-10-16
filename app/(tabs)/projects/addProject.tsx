@@ -1,21 +1,19 @@
 import { View, Text, StyleSheet } from 'react-native';
 
-export default function HomeScreen() {
+export default function AddProject() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}> INDEX PAGE</Text>
+      <Text style={styles.text}> ADD NEW PROJECT PAGE</Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 8,
+    flex: 1,
+    padding: 30,
   },
   text: {
-    gap: 8,
-    marginBottom: 8,
+    fontSize: 24,
   },
 });

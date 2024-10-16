@@ -1,7 +1,6 @@
-import { Tabs } from 'expo-router';
 import React from 'react';
-
-import { TabBarIcon } from '@/components/navigation/TabBarIcon';
+import { Tabs } from 'expo-router';
+import CustomTabBar from '@/components/navigation/CustomTabBar';
 
 export default function TabLayout() {
   return (
@@ -9,23 +8,18 @@ export default function TabLayout() {
       screenOptions={{
         headerShown: false,
       }}
+      tabBar={(props) => <CustomTabBar {...props} />}
     >
       <Tabs.Screen
-        name="index"
+        name="tasks"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
-          ),
+          title: 'Мои проекты',
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="projects"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
-          ),
+          title: 'Проекты',
         }}
       />
     </Tabs>

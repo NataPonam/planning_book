@@ -3,7 +3,6 @@ import { StyleSheet, View, TextInput, TextInputProps } from 'react-native';
 import { Colors } from '@/constants/Colors';
 
 export function InputComponent({ style, ...props }: TextInputProps) {
-  const [text, onChangeText] = useState('');
   const [active, setActive] = useState(false);
 
   return (
@@ -12,8 +11,6 @@ export function InputComponent({ style, ...props }: TextInputProps) {
         onFocus={() => setActive(true)}
         onBlur={() => setActive(false)}
         style={{ ...styles.input, borderColor: active ? Colors.accent : Colors.stroke }}
-        onChangeText={onChangeText}
-        value={text}
         {...props}
       />
     </View>

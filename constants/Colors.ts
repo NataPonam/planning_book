@@ -10,6 +10,8 @@ export const Colors = {
   lightText: '#848A94',
   shadowColor: 'rgba(0, 0, 0, 0.25)',
   shadow: '#5451D6',
+  blur: 'rgba(0, 0, 0, 0.16)',
+  darkShadow: '#5451D6',
 };
 export const Fonts = {
   regular: 'Poppins-Regular',
